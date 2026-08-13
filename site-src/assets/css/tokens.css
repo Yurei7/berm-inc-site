@@ -1,0 +1,34 @@
+/* ============================================================
+   BERM INC. — Design tokens
+   White + blue construction design system
+   ============================================================ */
+:root {
+  /* Palette */
+  --white: #ffffff;
+  --ice: #f5f9fe;          /* page alt background */
+  --ice-2: #eaf2fc;        /* deeper tint */
+  --line: #dce7f5;         /* hairline */
+  --line-strong: #c2d4ec;
+  --slate: #45597d;        /* body text */
+  --slate-dark: #2c3e5e;
+  --navy: #0a1f44;         /* headings, footer */
+  --navy-2: #102c5c;
+  --blue: #0d5fe0;         /* primary accent */
+  --blue-bright: #2f7df6;  /* hover */
+  --blue-deep: #0a47a6;    /* active */
+  --sky: #eaf3ff;
+
+  /* Type */
+  --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+
+  /* Layout */
+  --wrap: 1200px;
+  --gutter: clamp(1.25rem, 4vw, 2rem);
+  --section-pad: clamp(3.5rem, 8vw, 6rem);
+
+  /* Motion */
+  --ease: cubic-bezier(.22, .61, .36, 1);
+  --ease-in: cubic-bezier(.55, 0, .55, .2);
+}
