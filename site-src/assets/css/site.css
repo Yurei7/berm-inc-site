@@ -936,6 +936,34 @@ strong { color: var(--slate-dark); }
 .info-row a { color: var(--blue); }
 .area-tags { display: flex; flex-wrap: wrap; gap: .5em; margin-top: .9em; }
 
+/* ---------- Navy band ---------- */
+.band-navy {
+  background: var(--navy);
+  color: rgba(255, 255, 255, .8);
+  padding: var(--section-pad) 0;
+  position: relative;
+}
+.band-navy h2, .band-navy h3 { color: #fff; }
+.band-navy p { color: rgba(255, 255, 255, .78); }
+.band-navy strong { color: #fff; }
+.mono-strip {
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--slate-dark);
+  line-height: 2.2;
+  margin: 1.2em 0;
+}
+.mono-strip--light { color: #9cc3ff; }
+.feature--dark {
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-top: 3px solid #7fb0f7;
+}
+.feature--dark h3 { color: #fff; }
+.feature--dark .feature__icon { background: rgba(127, 176, 247, .12); color: #7fb0f7; }
+
 /* ---------- Reveal animations ---------- */
 .reveal {
   opacity: 0;

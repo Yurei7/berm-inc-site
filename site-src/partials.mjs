@@ -16,10 +16,11 @@ export const COMPANY = {
 
 export const NAV = [
   { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services/' },
   { label: 'About', href: '/about/' },
-  { label: 'Gallery', href: '/gallery/' },
-  { label: 'Blog', href: '/blog/' },
+  { label: 'Our Approach', href: '/approach/' },
+  { label: 'Services', href: '/services/' },
+  { label: 'Our Work', href: '/work/' },
+  { label: 'Warranty & Protection', href: '/warranty/' },
   { label: 'Contact', href: '/contact/' },
 ];
 
@@ -120,6 +121,7 @@ ${COMPANY.areas.map((a) => `          <li>${a}</li>`).join('\n')}
     </div>
     <div class="footer-bottom">
       <span>© 2026 by Berm Inc. All rights reserved.</span>
+      <span>HCRA Licence No. B60719 · Vendor &amp; Builder</span>
       <span>Custom Homes · Renovations · Building Envelope · Exterior Systems</span>
     </div>
   </div>
@@ -127,17 +129,17 @@ ${COMPANY.areas.map((a) => `          <li>${a}</li>`).join('\n')}
 }
 
 export function ctaBand() {
-  return `<section class="cta-band" aria-label="Get in touch">
+  return `<section class="cta-band" aria-label="Start a conversation">
   <div class="cta-band__bg"><img src="/assets/img/cta-bg.jpg" alt="" aria-hidden="true" loading="lazy"></div>
   <div class="cta-band__scrim grid-bg--dark"></div>
   <div class="wrap cta-band__inner">
     <div>
-      <p class="eyebrow eyebrow--light">Ready to build your home?</p>
-      <h2>Let's Talk About Your Next Project</h2>
-      <p class="lede">Contact us today to set up a free consultation. We're here to help you with your construction needs.</p>
+      <p class="eyebrow eyebrow--light">Ready to build better?</p>
+      <h2>Let's Build Something That Performs as Beautifully as It Looks.</h2>
+      <p class="lede">Whether you are planning a modern custom home, a high-performance residence, or a home incorporating Passive House principles, Berm can help turn the concept into a carefully built reality.</p>
       <div class="cta-band__actions">
-        <a class="btn btn--lg" href="/contact/">Schedule a Consultation <span class="arr">→</span></a>
-        <a class="btn btn--ghost-light btn--lg" href="/gallery/">View Our Work</a>
+        <a class="btn btn--lg" href="/contact/">Start a Conversation <span class="arr">→</span></a>
+        <a class="btn btn--ghost-light btn--lg" href="/approach/">Explore Our Approach</a>
       </div>
     </div>
     <div class="cta-band__contact">

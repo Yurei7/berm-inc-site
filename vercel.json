@@ -2,5 +2,9 @@
   "buildCommand": "npm run build",
   "outputDirectory": "site",
   "cleanUrls": false,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/gallery/", "destination": "/work/", "permanent": true },
+    { "source": "/gallery", "destination": "/work/", "permanent": true }
+  ]
 }
