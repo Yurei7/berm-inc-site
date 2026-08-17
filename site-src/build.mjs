@@ -156,7 +156,7 @@ function build() {
       description: page.description,
       path: page.path,
       jsonld,
-    }) + header(page.path) + body + (noSharedCta ? '' : ctaBand()) + tail();
+    }) + header(page.path) + body + (noSharedCta ? '' : ctaBand()) + footer(page.path) + tail();
     const dest = join(outDir, page.out);
     mkdirSync(dirname(dest), { recursive: true });
     writeFileSync(dest, html);
