@@ -25,7 +25,7 @@ export const NAV = [
 ];
 
 const FONT_HREF =
-  'https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;750;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap';
+  'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap';
 
 export function head({ title, description, path, image, jsonld, canonical }) {
   const url = SITE_URL + path;
@@ -39,7 +39,7 @@ export function head({ title, description, path, image, jsonld, canonical }) {
   <meta name="description" content="${description}">
   <link rel="canonical" href="${canonical || url}">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0a1f44">
+  <meta name="theme-color" content="#1a1815">
   <meta name="geo.region" content="CA-ON">
   <meta name="geo.placename" content="Vaughan">
   <meta name="ICBM" content="43.7989, -79.5136">
