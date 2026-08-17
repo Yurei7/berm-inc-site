@@ -486,53 +486,6 @@ strong { color: var(--slate-dark); }
   margin-bottom: 1em;
 }
 
-/* ---------- Testimonials ---------- */
-.quote-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  gap: 1.4rem;
-}
-.quote-card {
-  background: var(--white);
-  border: 1px solid var(--line);
-  padding: 1.7rem 1.6rem 1.5rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.quote-card::before {
-  content: "“";
-  position: absolute;
-  top: .35em; left: .45em;
-  font-family: var(--font-display);
-  font-size: 4.2rem;
-  line-height: 1;
-  color: var(--ice-2);
-  font-weight: 800;
-  pointer-events: none;
-}
-.quote-card blockquote {
-  margin: 0 0 1.3em;
-  color: var(--slate-dark);
-  font-size: .97rem;
-  position: relative;
-  z-index: 1;
-  flex: 1;
-}
-.quote-card cite {
-  font-style: normal;
-  font-family: var(--font-mono);
-  font-size: .72rem;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: var(--blue);
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: .6em;
-}
-.quote-card cite::before { content: ""; width: 26px; height: 2px; background: var(--blue); }
-
 /* ---------- CTA band ---------- */
 .cta-band {
   position: relative;
@@ -936,6 +889,32 @@ strong { color: var(--slate-dark); }
 .info-row a { color: var(--blue); }
 .area-tags { display: flex; flex-wrap: wrap; gap: .5em; margin-top: .9em; }
 
+/* ---------- Compact numbered list (teaser sections) ---------- */
+.mini-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+.mini-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem 1rem 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.mini-item:nth-child(odd) { padding-right: 1.6rem; }
+.mini-item:nth-child(even) { border-left: 1px solid var(--line); padding-left: 1.6rem; }
+.mini-num {
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--blue);
+  flex: none;
+  padding-top: .3em;
+}
+.mini-item h3 { font-size: 1.05rem; margin-bottom: .25em; }
+.mini-item p { font-size: .9rem; margin: 0; }
+
 /* ---------- Navy band ---------- */
 .band-navy {
   background: var(--navy);
@@ -1034,6 +1013,9 @@ strong { color: var(--slate-dark); }
   .gallery-grid { columns: 2; column-gap: 10px; }
   .gallery-grid figure { margin-bottom: 10px; }
   .form-grid { grid-template-columns: 1fr; }
+  .mini-list { grid-template-columns: 1fr; }
+  .mini-item:nth-child(odd) { padding-right: 0; }
+  .mini-item:nth-child(even) { border-left: 0; padding-left: 0; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .lightbox__btn { width: 40px; height: 40px; }
   .tl-item { padding-left: 3rem; }

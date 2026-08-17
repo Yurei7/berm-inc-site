@@ -149,12 +149,14 @@ function build() {
     const jsonld = page.jsonld
       ? `<script type="application/ld+json">${JSON.stringify(page.jsonld)}</script>`
       : '';
+    // Pages that already carry their own closing section skip the shared CTA band
+    const noSharedCta = ['/', '/contact/', '/warranty/', '/404.html'].includes(page.path);
     const html = head({
       title: page.title,
       description: page.description,
       path: page.path,
       jsonld,
-    }) + header(page.path) + body + tail();
+    }) + header(page.path) + body + (noSharedCta ? '' : ctaBand()) + tail();
     const dest = join(outDir, page.out);
     mkdirSync(dirname(dest), { recursive: true });
     writeFileSync(dest, html);
