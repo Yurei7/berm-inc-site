@@ -162,10 +162,6 @@ function build() {
     if (page.path !== '/404.html') urls.push(SITE_URL + page.path);
   }
 
-  /* favicon */
-  writeFileSync(join(outDir, 'favicon.svg'),
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#1a1815"/><path d="M16 14h32v6H22v10h24v6H22v10h26v6H16z" fill="#fcfbf8"/></svg>`);
-
   /* sitemap */
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

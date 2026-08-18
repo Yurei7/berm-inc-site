@@ -62,8 +62,8 @@ export function head({ title, description, path, image, jsonld, canonical }) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="${FONT_HREF}" rel="stylesheet">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/assets/img/logo-mark.png">
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="/assets/css/tokens.css">
   <link rel="stylesheet" href="/assets/css/site.css">
   ${jsonld || ''}
@@ -78,9 +78,8 @@ export function header(path) {
   }).join('\n');
   return `<header class="site-header">
   <div class="wrap site-header__inner">
-    <a class="logo" href="/" aria-label="Berm Inc. — Home">
-      <span class="logo-mark">B</span>
-      <span class="logo-text">BERM<small>INC. CONSTRUCTION</small></span>
+    <a class="logo" href="/" aria-label="Berm Inc. Construction — Home">
+      <img class="logo-img" src="/assets/img/logo.png" width="148" height="44" alt="Berm Inc. Construction logo">
     </a>
     <nav class="main-nav" aria-label="Main navigation">
 ${links}
@@ -96,9 +95,8 @@ export function footer(path) {
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="logo" href="/" aria-label="Berm Inc. — Home">
-          <span class="logo-mark">B</span>
-          <span class="logo-text">BERM<small>INC. CONSTRUCTION</small></span>
+        <a class="logo" href="/" aria-label="Berm Inc. Construction — Home">
+          <img class="logo-img logo-img--light" src="/assets/img/logo-white.png" width="148" height="44" alt="Berm Inc. Construction logo">
         </a>
         <p>${COMPANY.tagline}. Fully insured, HCRA-certified builder serving Ontario with custom homes, renovations, and building envelope systems.</p>
       </div>

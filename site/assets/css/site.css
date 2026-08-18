@@ -113,39 +113,11 @@ strong { color: var(--ink); font-weight: 600; }
 .logo {
   display: flex;
   align-items: center;
-  gap: .8em;
   color: var(--ink);
 }
 .logo:hover { color: var(--ink); }
-.logo-mark {
-  display: grid;
-  place-items: center;
-  width: 42px; height: 42px;
-  background: var(--ink);
-  color: var(--ivory);
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: 1.35rem;
-  letter-spacing: -.02em;
-  flex: none;
-}
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: 1.3rem;
-  letter-spacing: .14em;
-  line-height: 1;
-}
-.logo-text small {
-  font-family: var(--font-mono);
-  font-weight: 400;
-  font-size: .64rem;
-  letter-spacing: .26em;
-  color: var(--stone-dark);
-  margin-top: .4em;
-}
+.logo-img { height: 40px; width: auto; display: block; }
+.footer-brand .logo-img { height: 44px; }
 .main-nav { display: flex; align-items: center; gap: 1.7rem; }
 .main-nav a {
   font-family: var(--font-mono);
