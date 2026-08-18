@@ -43,7 +43,7 @@ export function head({ title, description, path, image, jsonld, canonical }) {
   <meta name="description" content="${description}">
   <link rel="canonical" href="${canonical || url}">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#1a1815">
+  <meta name="theme-color" content="#2c2119">
   <meta name="geo.region" content="CA-ON">
   <meta name="geo.placename" content="Vaughan">
   <meta name="ICBM" content="43.7989, -79.5136">
