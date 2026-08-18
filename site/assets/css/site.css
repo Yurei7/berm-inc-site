@@ -159,10 +159,23 @@ strong { color: var(--ink); font-weight: 600; }
   transition: color .18s, border-color .18s;
 }
 .main-nav a:hover { color: var(--ink); }
-/* nav button must beat .main-nav a color (specificity) */
-.main-nav a.btn,
-.main-nav a.btn:hover,
-.main-nav a.btn:active { color: var(--ivory); }
+/* Header CTA — scoped above .main-nav a so nav styles can't break it */
+.main-nav a.header-cta {
+  padding: .78em 1.5em;
+  border: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  color: var(--ivory);
+  white-space: nowrap;
+  line-height: 1;
+  font-size: .66rem;
+  letter-spacing: .16em;
+}
+.main-nav a.header-cta:hover {
+  color: var(--ivory);
+  background: var(--bronze);
+  border-color: var(--bronze);
+  border-bottom-color: var(--bronze);
+}
 .main-nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--bronze); font-weight: 600; }
 .header-cta { display: inline-flex; }
 .nav-toggle {
@@ -996,7 +1009,7 @@ strong { color: var(--ink); font-weight: 600; }
   .main-nav a:last-child { border-bottom: 0; }
   .nav-toggle { display: block; }
   .header-cta { display: none; }
-  .main-nav .header-cta { display: inline-flex; margin-top: 1rem; }
+  .main-nav .header-cta { display: flex; justify-content: center; margin-top: 1rem; }
 
   .stats-band__inner { grid-template-columns: 1fr 1fr; }
   .stat { border-left: 0; border-top: 1px solid var(--line); padding: 1.5rem 1.2rem 1.6rem; }

@@ -15,12 +15,16 @@ export const COMPANY = {
 };
 
 export const NAV = [
-  { label: 'Home', href: '/' },
   { label: 'About', href: '/about/' },
   { label: 'Our Approach', href: '/approach/' },
   { label: 'Services', href: '/services/' },
   { label: 'Our Work', href: '/work/' },
-  { label: 'Warranty & Protection', href: '/warranty/' },
+  { label: 'Warranty', href: '/warranty/' },
+];
+
+export const FOOTER_LINKS = [
+  { label: 'Home', href: '/' },
+  ...NAV,
   { label: 'Contact', href: '/contact/' },
 ];
 
@@ -101,7 +105,7 @@ export function footer(path) {
       <div class="footer-col">
         <h4>Explore</h4>
         <ul>
-${NAV.map((n) => `          <li><a href="${n.href}">${n.label}</a></li>`).join('\n')}
+${FOOTER_LINKS.map((n) => `          <li><a href="${n.href}">${n.label}</a></li>`).join('\n')}
         </ul>
       </div>
       <div class="footer-col">
