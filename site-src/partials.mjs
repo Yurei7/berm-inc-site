@@ -136,7 +136,7 @@ export function ctaBand() {
     <div>
       <p class="eyebrow eyebrow--light">Ready to build better?</p>
       <h2>Let's Build Something That Performs as Beautifully as It Looks.</h2>
-      <p class="lede">Whether you are planning a modern custom home, a high-performance residence, or a home incorporating Passive House principles, Berm can help turn the concept into a carefully built reality.</p>
+      <p class="lede">Whether you are planning a modern custom home, a <a href="/approach/">high-performance residence</a>, or a home incorporating <a href="/approach/#passive-house">Passive House principles</a>, Berm can help turn the concept into a carefully built reality.</p>
       <div class="cta-band__actions">
         <a class="btn btn--lg" href="/contact/">Start a Conversation <span class="arr">→</span></a>
         <a class="btn btn--ghost-light btn--lg" href="/approach/">Explore Our Approach</a>

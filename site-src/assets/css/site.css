@@ -521,6 +521,12 @@ strong { color: var(--ink); font-weight: 600; }
 .cta-band__inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; padding: clamp(3.5rem, 7vw, 5.5rem) 0; }
 .cta-band h2 { color: var(--ivory); }
 .cta-band .lede { max-width: 54ch; }
+.cta-band .lede a {
+  color: #cfa96f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.cta-band .lede a:hover { color: #e6c896; }
 .cta-band__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.6rem; }
 .cta-band__contact {
   border-left: 1px solid rgba(252, 251, 248, .18);

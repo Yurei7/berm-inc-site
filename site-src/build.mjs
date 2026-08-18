@@ -38,7 +38,6 @@ const localBusinessLD = () => ({
     { '@type': 'Place', name: 'Hamilton' },
   ],
   description: 'Fully insured, HCRA-certified custom home builder in Toronto, Vaughan and the Greater Toronto Area. Custom homes, renovations, additions, project management, and building envelope systems.',
-  openingHours: 'Mo-Fr 09:00-18:00',
 });
 
 /* ---------------- Page registry ---------------- */
@@ -46,43 +45,43 @@ const PAGES = [
   {
     out: 'index.html', path: '/',
     title: 'Custom Home Builder in Toronto, Vaughan & GTA | Berm Inc.',
-    description: 'Berm Inc. is a fully insured, HCRA-certified custom home builder serving Toronto, Vaughan and the Greater Toronto Area — custom homes, renovations, additions, project management, and building envelope systems.',
+    description: 'Fully insured, HCRA-licensed custom home builder in Toronto, Vaughan & the GTA — custom homes, renovations, additions & building envelope systems.',
     jsonld: localBusinessLD(),
   },
   {
     out: 'services/index.html', path: '/services/',
-    title: 'Construction Services | Custom Homes, Renovations & Project Management | Berm Inc.',
-    description: 'Custom home construction, construction project management, interior finishes and architectural details, and renovations & additions — delivered by Berm Inc. across Toronto and the GTA.',
+    title: 'Custom Homes, Renovations & Project Management | Berm Inc.',
+    description: 'Custom home construction, project management, interior finishes and renovations across Toronto, Vaughan and the Greater Toronto Area.',
   },
   {
     out: 'about/index.html', path: '/about/',
     title: 'About Berm Inc. | 25+ Years of Construction Experience',
-    description: 'With over 25 years of experience in construction and project management, Berm Inc. is an HCRA-certified builder delivering custom homes and renovations across Ontario since 2016.',
+    description: 'Berm Inc. — 25+ years of construction experience, HCRA-certified builder delivering custom homes and renovations across Ontario since 2016.',
   },
   {
     out: 'approach/index.html', path: '/approach/',
-    title: 'Our Approach | Building Science, Passive House Principles & Craftsmanship | Berm Inc.',
-    description: 'How Berm builds: building science first, a continuous building envelope, Passive House principles, a disciplined design-to-construction process, and craftsmanship you can verify.',
+    title: 'Building Science & Passive House Principles | Berm Inc.',
+    description: 'How Berm builds custom homes: building science first, a continuous envelope, Passive House principles and verified craftsmanship in Toronto and the GTA.',
   },
   {
     out: 'work/index.html', path: '/work/',
-    title: 'Our Work | Construction Photography & Industrial Background | Berm Inc.',
-    description: 'Berm Inc. project photography — the work behind the walls: custom homes, envelope assemblies, structural work, and our industrial construction background across the GTA.',
+    title: 'Custom Home Projects & Construction Gallery | Berm Inc.',
+    description: 'Berm Inc. project photography — custom homes, envelope assemblies and structural work, plus our industrial construction background across the GTA.',
   },
   {
     out: 'warranty/index.html', path: '/warranty/',
-    title: 'Warranty & Protection | HCRA Licensed Builder B60719 | Berm Inc.',
-    description: 'Berm Inc. is an HCRA-licensed Vendor and Builder in Ontario (Licence No. B60719). Quality is the first line of defence — warranty is the backup. Licensed, accountable, building-science driven.',
+    title: 'Warranty & Protection | HCRA Licensed Builder | Berm Inc.',
+    description: 'Berm Inc. is an HCRA-licensed Vendor and Builder in Ontario (Licence No. B60719). Licensed, accountable, building-science driven construction.',
   },
   {
     out: 'blog/index.html', path: '/blog/',
-    title: 'Construction Blog | Berm Inc.',
-    description: 'Practical advice on hiring a contractor, modern home design, windows, and construction from Berm Inc., custom home builder in Toronto and the GTA.',
+    title: 'Construction Advice & Home Building Tips | Berm Inc.',
+    description: 'Practical advice on hiring a contractor, home design, windows and construction — from Berm Inc., custom home builder in Toronto and the GTA.',
   },
   {
     out: 'blog/how-to-avoid-costly-mistakes-when-hiring-a-contractor/index.html',
     path: '/blog/how-to-avoid-costly-mistakes-when-hiring-a-contractor/',
-    title: 'How to Avoid Costly Mistakes When Hiring a Contractor | Berm Inc.',
+    title: 'Avoid Costly Mistakes When Hiring a Contractor | Berm Inc.',
     description: 'Hiring the right contractor is one of the most important decisions in any renovation or custom home project. Here is what to check before signing a contract.',
     jsonld: blogPostLD(
       'How to Avoid Costly Mistakes When Hiring a Contractor',
@@ -92,8 +91,8 @@ const PAGES = [
   {
     out: 'blog/why-black-window-frames-and-large-glass-designs-are-defining-modern-homes/index.html',
     path: '/blog/why-black-window-frames-and-large-glass-designs-are-defining-modern-homes/',
-    title: 'Why Black Window Frames & Large Glass Define Modern Homes | Berm Inc.',
-    description: 'Black window frames and large-format glass are redefining modern homes — cleaner lines, brighter interiors, and a stronger connection between indoor and outdoor spaces.',
+    title: 'Why Black Window Frames Define Modern Homes | Berm Inc.',
+    description: 'Black window frames and large-format glass are redefining modern homes with cleaner lines, brighter interiors and a stronger indoor-outdoor connection.',
     jsonld: blogPostLD(
       'Why Black Window Frames and Large Glass Designs Are Defining Modern Homes',
       'Modern home design has shifted toward cleaner lines, brighter interiors, and stronger connections between indoor and outdoor spaces. Two of the biggest trends leading this transformation are black window frames and large-format windows.',
