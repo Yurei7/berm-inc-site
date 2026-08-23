@@ -898,6 +898,78 @@ strong { color: var(--ink); font-weight: 600; }
 .info-row a:hover { color: var(--ink); }
 .area-tags { display: flex; flex-wrap: wrap; gap: .5em; margin-top: 1em; }
 
+/* ---------- Cutaway diagram panel ---------- */
+.cutaway {
+  margin: 0 0 clamp(2rem, 4vw, 2.8rem);
+}
+.cutaway-panel {
+  background: var(--ink);
+  padding: clamp(1rem, 3vw, 2.2rem);
+}
+.cutaway-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cutaway figcaption {
+  padding: 1rem 0 .2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 2.2rem;
+  align-items: baseline;
+  border-top: 1px solid var(--line);
+  margin-top: 1rem;
+}
+.cutaway-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem 2rem;
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 500;
+}
+.cutaway-legend .lg {
+  display: inline-flex;
+  align-items: center;
+  gap: .55em;
+}
+.cutaway-legend .sw {
+  display: inline-block;
+  flex: none;
+}
+.sw--insul {
+  width: 44px; height: 12px;
+  border: 1px solid var(--stone);
+  background:
+    repeating-linear-gradient(0deg, #c98f2e 0 2px, #e0a83c 2px 4px);
+}
+.sw--air {
+  width: 44px; height: 4px;
+  border-radius: 2px;
+  background: #d64545;
+}
+.sw--fresh {
+  width: 44px; height: 6px;
+  border-radius: 3px;
+  background: #00a8e0;
+}
+.sw--stale {
+  width: 44px; height: 6px;
+  border-radius: 3px;
+  background: #f0733f;
+}
+.cutaway-cap {
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: none;
+  color: var(--stone-dark);
+  padding-top: .9rem;
+}
+
 /* ---------- Compact numbered list (teaser sections) ---------- */
 .mini-list {
   display: grid;
