@@ -898,15 +898,67 @@ strong { color: var(--ink); font-weight: 600; }
 .info-row a:hover { color: var(--ink); }
 .area-tags { display: flex; flex-wrap: wrap; gap: .5em; margin-top: 1em; }
 
-/* ---------- Cutaway diagram panel ---------- */
-.cutaway {
+/* ---------- Principles diagram (transparent cutaway + callouts) ---------- */
+.principles-diagram {
   margin: 0 0 clamp(2rem, 4vw, 2.8rem);
 }
-.cutaway-panel {
-  background: var(--ink);
-  padding: clamp(1rem, 3vw, 2.2rem);
+.pd-grid {
+  display: grid;
+  grid-template-columns: minmax(190px, 250px) 1fr minmax(190px, 250px);
+  gap: 0 1.6rem;
+  align-items: stretch;
 }
-.cutaway-panel img {
+.pd-calls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+.pd-call {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+/* stub sits exactly at the baked line height */
+.pd-grid > .pd-calls:first-child .pd-call:nth-child(1) { top: calc(13.4% - 1.7rem); }
+.pd-grid > .pd-calls:first-child .pd-call:nth-child(2) { top: calc(59% - 1.7rem); }
+.pd-grid > .pd-calls:last-child .pd-call:nth-child(1) { top: calc(26% - 1.7rem); }
+/* bottom pair hangs ABOVE the line so text stays inside the image height */
+.pd-grid > .pd-calls:first-child .pd-call:nth-child(3) { top: auto; bottom: calc(10% - 1.7rem); }
+.pd-grid > .pd-calls:first-child .pd-call:nth-child(3)::after { top: auto; bottom: 1.7rem; }
+.pd-grid > .pd-calls:last-child .pd-call:nth-child(2) { top: auto; bottom: calc(6.5% - 1.7rem); }
+.pd-grid > .pd-calls:last-child .pd-call:nth-child(2)::after { top: auto; bottom: 1.7rem; }
+.pd-call::after {
+  content: '';
+  position: absolute;
+  top: 1.7rem;
+  width: 1.4rem;
+  height: 2px;
+  background: var(--bronze);
+}
+.pd-grid > .pd-calls:first-child .pd-call::after { right: -1.6rem; }
+.pd-grid > .pd-calls:last-child .pd-call::after { left: -1.6rem; }
+.pd-num {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: .74rem;
+  font-weight: 500;
+  color: var(--bronze-deep);
+  letter-spacing: .14em;
+}
+.pd-call h3 {
+  font-size: 1.02rem;
+  margin: .35rem 0 .3rem;
+  color: var(--ink);
+}
+.pd-call p {
+  font-size: .88rem;
+  color: var(--stone-dark);
+  margin: 0;
+}
+.pd-img { align-self: center; }
+.pd-img img {
   display: block;
   width: 100%;
   height: auto;
@@ -1069,6 +1121,11 @@ strong { color: var(--ink); font-weight: 600; }
   .gallery-grid figure { margin-bottom: 10px; }
   .form-grid { grid-template-columns: 1fr; }
   .mini-list { grid-template-columns: 1fr; }
+  .pd-grid { grid-template-columns: 1fr; }
+  .pd-img { order: -1; }
+  .pd-calls { height: auto; gap: 1.4rem; display: flex; flex-direction: column; }
+  .pd-call { position: static; }
+  .pd-call::after { display: none; }
   .mini-item:nth-child(odd) { padding-right: 0; }
   .mini-item:nth-child(even) { border-left: 0; padding-left: 0; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
