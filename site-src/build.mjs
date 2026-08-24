@@ -34,8 +34,10 @@ const localBusinessLD = () => ({
     { '@type': 'Place', name: 'Toronto' },
     { '@type': 'Place', name: 'Vaughan' },
     { '@type': 'Place', name: 'Greater Toronto Area' },
-    { '@type': 'Place', name: 'Ottawa' },
-    { '@type': 'Place', name: 'Hamilton' },
+    { '@type': 'Place', name: 'York Region' },
+    { '@type': 'Place', name: 'Peel Region' },
+    { '@type': 'Place', name: 'Halton Region' },
+    { '@type': 'Place', name: 'Durham Region' },
   ],
   description: 'Fully insured, HCRA-certified custom home builder in Toronto, Vaughan and the Greater Toronto Area. Custom homes, renovations, additions, project management, and building envelope systems.',
 });
