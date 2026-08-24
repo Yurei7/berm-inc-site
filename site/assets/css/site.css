@@ -464,9 +464,18 @@ strong { color: var(--ink); font-weight: 600; }
 /* ---------- Navy band (now ink) ---------- */
 .band-navy {
   background: var(--ink);
-  color: rgba(252, 251, 248, .8);
+  color: rgba(255, 255, 255, .8);
   padding: var(--section-pad) 0;
   position: relative;
+}
+.band-navy--showcase {
+  background:
+    linear-gradient(105deg, rgba(44, 33, 25, .93) 0%, rgba(44, 33, 25, .82) 55%, rgba(44, 33, 25, .62) 100%),
+    url('/assets/img/house-prairie.jpg') center / cover no-repeat;
+}
+.band-navy--showcase .feature--dark .feature__icon {
+  color: rgba(252, 251, 248, .88);
+  border-bottom-color: rgba(252, 251, 248, .3);
 }
 .band-navy h2, .band-navy h3 { color: var(--ivory); }
 .band-navy p { color: rgba(252, 251, 248, .82); }
