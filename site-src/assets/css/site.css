@@ -326,6 +326,7 @@ strong { color: var(--ink); font-weight: 600; }
   text-transform: uppercase;
   padding: .55em 1.2em;
 }
+.frame__tag--right { left: auto; right: -1px; }
 .check-list { list-style: none; padding: 0; margin: 1.5em 0 0; }
 .check-list li {
   position: relative;
