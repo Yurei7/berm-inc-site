@@ -11,7 +11,14 @@ export const COMPANY = {
   phoneHref: 'tel:+16476371499',
   email: 'Bermgroups@gmail.com',
   address: 'Unit 355 - 7250 Keele Street, Vaughan, ON Canada L4K 1Z8',
-  areas: ['Ontario', 'Ottawa', 'Toronto', 'Hamilton'],
+  areas: [
+    'Toronto: North York · Etobicoke · Scarborough · Downtown',
+    'York Region: Vaughan · Markham · Richmond Hill · King · Aurora · Newmarket',
+    'Peel: Mississauga · Brampton · Caledon',
+    'Halton: Oakville · Burlington · Milton',
+    'Durham: Whitby · Oshawa · Ajax · Pickering',
+    'Simcoe: Barrie · Innisfil',
+  ],
 };
 
 export const NAV = [
