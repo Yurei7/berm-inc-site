@@ -185,14 +185,17 @@ strong { color: var(--ink); font-weight: 600; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(78deg, rgba(44, 33, 25, .92) 0%, rgba(44, 33, 25, .78) 34%, rgba(44, 33, 25, .38) 64%, rgba(44, 33, 25, .22) 100%),
-    linear-gradient(to top, rgba(44, 33, 25, .55) 0%, transparent 30%);
+    linear-gradient(78deg, rgba(44, 33, 25, .82) 0%, rgba(44, 33, 25, .6) 30%, rgba(44, 33, 25, .2) 60%, rgba(44, 33, 25, .06) 100%),
+    linear-gradient(to top, rgba(44, 33, 25, .5) 0%, transparent 30%);
 }
 .hero__content {
   position: relative;
   z-index: 2;
   max-width: 680px;
   color: var(--ivory);
+}
+.hero__title, .hero__sub {
+  text-shadow: 0 2px 24px rgba(44, 33, 25, .55), 0 1px 3px rgba(44, 33, 25, .4);
 }
 .hero .eyebrow { color: rgba(252, 251, 248, .72); }
 .hero .eyebrow::before { background: var(--bronze); }
@@ -1114,7 +1117,7 @@ strong { color: var(--ink); font-weight: 600; }
   .stat:nth-child(even) { border-left: 1px solid var(--line); }
 
   .hero { min-height: 0; }
-  .hero__scrim { background: linear-gradient(180deg, rgba(44, 33, 25, .94) 6%, rgba(44, 33, 25, .78) 48%, rgba(44, 33, 25, .5) 100%); }
+  .hero__scrim { background: linear-gradient(180deg, rgba(44, 33, 25, .88) 6%, rgba(44, 33, 25, .72) 48%, rgba(44, 33, 25, .45) 100%); }
   .hero__title .accent { white-space: normal; }
 
   .gallery-grid { columns: 2; column-gap: 10px; }
