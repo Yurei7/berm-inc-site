@@ -133,7 +133,9 @@ strong { color: var(--ink); font-weight: 600; }
 .main-nav a:hover { color: var(--ink); }
 /* Header CTA — scoped above .main-nav a so nav styles can't break it */
 .main-nav a.header-cta {
-  padding: .78em 1.5em;
+  padding: .7em 1.2em;
+  font-size: .64rem;
+  letter-spacing: .14em;
   border: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
   color: var(--ivory);

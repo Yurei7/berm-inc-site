@@ -15,6 +15,7 @@ export const COMPANY = {
 };
 
 export const NAV = [
+  { label: 'Home', href: '/' },
   { label: 'About', href: '/about/' },
   { label: 'Our Approach', href: '/approach/' },
   { label: 'Services', href: '/services/' },
@@ -83,7 +84,7 @@ export function header(path) {
     </a>
     <nav class="main-nav" aria-label="Main navigation">
 ${links}
-      <a class="btn header-cta" href="/contact/">Get a Quote <span class="arr">→</span></a>
+      <a class="btn header-cta" href="/contact/">Ready for Your Dream Home? <span class="arr">→</span></a>
     </nav>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
