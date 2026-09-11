@@ -615,9 +615,15 @@ strong { color: var(--ink); font-weight: 600; }
 .page-hero__scrim {
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(245, 242, 236, .92) 10%, rgba(245, 242, 236, .58) 46%, rgba(245, 242, 236, .08) 100%);
+  background: linear-gradient(100deg, rgba(245, 242, 236, .97) 0%, rgba(245, 242, 236, .94) 40%, rgba(245, 242, 236, .74) 64%, rgba(245, 242, 236, .2) 100%);
 }
 .page-hero__content { position: relative; z-index: 2; max-width: 720px; }
+.page-hero__content .lede { max-width: 60ch; }
+.page-hero__content .chip {
+  background: rgba(252, 251, 248, .82);
+  border-color: var(--line-strong);
+}
+.page-hero__content .chip { backdrop-filter: blur(2px); }
 .page-hero h1 { margin-bottom: .45em; }
 .page-hero .lede { font-size: 1.06rem; color: var(--stone-dark); max-width: 60ch; }
 .crumbs {
@@ -1035,6 +1041,47 @@ strong { color: var(--ink); font-weight: 600; }
   text-transform: none;
   color: var(--stone-dark);
   padding-top: .9rem;
+}
+
+/* ---------- FAQ blocks ---------- */
+.faq {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
+  max-width: 80ch;
+}
+.faq__item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.faq__item h3 {
+  font-size: 1.12rem;
+  margin: 0 0 .5rem;
+}
+.faq__item p {
+  margin: 0;
+  color: var(--text);
+}
+/* ---------- Article tables ---------- */
+.article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8rem 0;
+  font-size: .92rem;
+}
+.article th, .article td {
+  text-align: left;
+  padding: .8rem .9rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.article th {
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--stone-dark);
+  border-bottom: 1px solid var(--line-strong);
 }
 
 /* ---------- Compact numbered list (teaser sections) ---------- */

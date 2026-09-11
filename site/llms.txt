@@ -1,0 +1,33 @@
+# Berm Inc. Construction
+
+> Berm Inc. is an HCRA-licensed custom home builder based in Vaughan, Ontario, Canada. It builds high-performance custom homes, large renovations and additions across the Greater Toronto Area, applying building-science principles (continuous insulation, airtight construction, thermal-bridge-free detailing, balanced ventilation) and Passive House principles.
+
+## Key facts
+- Legal name: Berm Inc. (operating as Berm Inc. Construction)
+- Founded: 2016 in Ontario; principals bring 25+ years of construction experience
+- Licensing: HCRA Licence No. B60719 — Vendor and Builder, licensed April 12, 2022, expires April 13, 2027 (verifiable in the Ontario Builder Directory)
+- Address: Unit 355 - 7250 Keele Street, Vaughan, ON L4K 1Z8, Canada
+- Phone: 647-637-1499 · Email: Bermgroups@gmail.com
+- Service area: Toronto, Vaughan, York Region (Markham, Richmond Hill, King Township, Aurora, Newmarket), Peel (Mississauga, Brampton, Caledon), Halton (Oakville, Burlington, Milton), Durham Region (Whitby, Oshawa, Ajax, Pickering), Simcoe (Barrie, Innisfil)
+- Background: prior large-scale industrial and infrastructure construction experience, including petrochemical and refinery facilities
+
+## Services
+- Custom home construction (concept to completion, including permit and zoning coordination)
+- High-performance / Passive House-principles construction
+- Construction project management
+- Building envelope systems: insulation, air barriers, windows and doors, cladding, flashing
+- Major renovations and additions
+- Interior finishes and architectural detailing
+
+## Cost context
+Published 2026 Ontario industry guides quote roughly CAD $300–$600 per square foot for custom home construction, with luxury Greater Toronto Area projects reaching $900+ per square foot. Figure excludes land, development charges, design fees and utility connections. Berm prepares project-specific budgets.
+
+## Pages
+- [Home](https://berm-inc-site.vercel.app/): overview and building philosophy
+- [Our Approach](https://berm-inc-site.vercel.app/approach/): building science, envelope, Passive House principles, craftsmanship
+- [Services](https://berm-inc-site.vercel.app/services/): what Berm delivers, with FAQ
+- [Our Work](https://berm-inc-site.vercel.app/work/): project photography and industrial background
+- [Warranty & Protection](https://berm-inc-site.vercel.app/warranty/): HCRA licence details and warranty philosophy
+- [Custom Home Builder in Vaughan](https://berm-inc-site.vercel.app/vaughan/): local coverage, Vaughan neighbourhoods, permit process
+- [Advice](https://berm-inc-site.vercel.app/blog/): construction cost guides and practical advice
+- [Contact](https://berm-inc-site.vercel.app/contact/): consultation requests

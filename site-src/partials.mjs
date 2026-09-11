@@ -32,7 +32,8 @@ export const NAV = [
 
 export const FOOTER_LINKS = [
   { label: 'Home', href: '/' },
-  ...NAV,
+  ...NAV.filter((n) => n.href !== '/'),
+  { label: 'Custom Home Builder in Vaughan', href: '/vaughan/' },
   { label: 'Contact', href: '/contact/' },
 ];
 
