@@ -101,7 +101,7 @@ const PAGES = [
       }),
       faqLD([
         ['How much does it cost to build a custom home in the GTA?',
-         'Published 2026 Ontario guides quote roughly $300–$600 per square foot for standard custom construction, with luxury GTA projects reaching $900+ per square foot. Berm prepares a project-specific budget after reviewing your lot, design intent and specification level.'],
+         'It depends on your lot, design intent and specification level. Published 2026 Ontario ranges are broken down in our custom home cost guide, and every project Berm prices is budgeted specifically before construction begins.'],
         ['What areas does Berm Inc. build in?',
          'Berm Inc. is based in Vaughan and builds custom homes across the Greater Toronto Area — including Toronto, Vaughan, Markham, Richmond Hill, King Township, Aurora, Newmarket, Mississauga, Brampton, Oakville and Durham Region.'],
         ['Does Berm Inc. work with my architect or designer?',
