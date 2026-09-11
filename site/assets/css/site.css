@@ -188,15 +188,18 @@ strong { color: var(--ink); font-weight: 600; }
   inset: 0;
   background:
     linear-gradient(78deg, rgba(44, 33, 25, .82) 0%, rgba(44, 33, 25, .6) 30%, rgba(44, 33, 25, .2) 60%, rgba(44, 33, 25, .06) 100%),
-    linear-gradient(to top, rgba(44, 33, 25, .5) 0%, transparent 30%);
+    linear-gradient(to top, rgba(44, 33, 25, .62) 0%, transparent 34%);
 }
 .hero__content {
   position: relative;
   z-index: 2;
-  max-width: 680px;
+  /* .wrap padding (32px/side) eats into the box — cap accounts for it so the
+     first headline line ("Better Homes Begin With") fits without stranding "With" */
+  max-width: 830px;
   color: var(--ivory);
 }
-.hero__title, .hero__sub {
+.hero__sub { max-width: 62ch; }
+.hero__title, .hero__sub, .hero .eyebrow {
   text-shadow: 0 2px 24px rgba(44, 33, 25, .55), 0 1px 3px rgba(44, 33, 25, .4);
 }
 .hero .eyebrow { color: rgba(252, 251, 248, .72); }
