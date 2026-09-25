@@ -1197,3 +1197,26 @@ strong { color: var(--ink); font-weight: 600; }
   .lightbox__btn { width: 40px; height: 40px; }
   .tl-item { padding-left: 3.2rem; }
 }
+
+/* ==========================================================================
+   Passive House credential seal (credential badge + caption block)
+   ========================================================================== */
+.ph-seal {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 780px;
+  margin: 0 0 2.6rem;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--line);
+  background: rgba(252, 251, 248, .62);
+}
+.ph-seal img { width: 132px; height: 132px; display: block; }
+.ph-seal figcaption { font-size: .9rem; line-height: 1.6; color: var(--text); }
+.ph-seal--sm { grid-template-columns: 96px 1fr; max-width: 640px; margin-bottom: 2rem; gap: 1.2rem; }
+.ph-seal--sm img { width: 96px; height: 96px; }
+@media (max-width: 560px) {
+  .ph-seal, .ph-seal--sm { grid-template-columns: 1fr; }
+  .ph-seal img, .ph-seal--sm img { width: 96px; height: 96px; }
+}
