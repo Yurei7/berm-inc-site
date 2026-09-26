@@ -1220,3 +1220,66 @@ strong { color: var(--ink); font-weight: 600; }
   .ph-seal, .ph-seal--sm { grid-template-columns: 1fr; }
   .ph-seal img, .ph-seal--sm img { width: 96px; height: 96px; }
 }
+
+/* ============================================================
+   Credentials bar — homepage trust strip above the footer.
+   Logos are muted by default (grayscale + low opacity) so the row
+   reads as quiet credibility rather than a sponsor wall; hover
+   restores each logo's real brand colours.
+   ============================================================ */
+.cred-bar {
+  border-top: 1px solid var(--line);
+  background: var(--bone);
+  padding: clamp(2rem, 4.5vw, 3rem) 0;
+}
+.cred-bar__label {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--stone-dark);
+  text-align: center;
+  margin: 0 0 1.7rem;
+}
+.cred-bar__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2.1rem, 5vw, 4.4rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Per-logo heights are optical, not uniform: Tarion is a wide bold wordmark
+   (reads heavy), HCRA is a wide light lockup (reads small), so a single shared
+   height makes the row look unbalanced. Each li sets its own --lh. */
+.cred-bar__list li { --lh: 34px; --lscale: 1; display: flex; align-items: center; }
+.cred-bar__list .cred--lg { --lh: 47px; }
+.cred-bar__list .cred--md { --lh: 43px; }
+.cred-bar__list .cred--sm { --lh: 30px; }
+.cred-bar__list .cred--xs { --lh: 25px; }
+/* Houzz is a lowercase wordmark with a tall ascender, so its baseline reads low
+   next to the uppercase marks — nudge it up optically. */
+.cred-bar__list .cred--sm { transform: translateY(-1px); }
+.cred-bar__list img {
+  height: calc(var(--lh) * var(--lscale));
+  width: auto;
+  display: block;
+  filter: grayscale(1);
+  opacity: .58;
+  transition: filter .35s var(--ease), opacity .35s var(--ease);
+}
+.cred-bar__list li:hover img { filter: grayscale(0); opacity: 1; }
+@media (max-width: 700px) {
+  /* A 3+1 wrap leaves one logo orphaned on its own row; a 2x2 grid reads as
+     deliberate and gives each mark more room, so the smaller sub-text survives. */
+  .cred-bar__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.7rem 1.1rem;
+    justify-items: center;
+  }
+  .cred-bar__list li { --lscale: .82; }
+  .cred-bar__label { margin-bottom: 1.5rem; }
+}
