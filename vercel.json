@@ -4,6 +4,12 @@
   "cleanUrls": false,
   "trailingSlash": true,
   "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "berm-inc-site.vercel.app" }],
+      "destination": "https://www.berminc.com/$1",
+      "permanent": true
+    },
     { "source": "/gallery/", "destination": "/work/", "permanent": true },
     { "source": "/gallery", "destination": "/work/", "permanent": true }
   ]
