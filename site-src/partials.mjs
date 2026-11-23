@@ -1,7 +1,7 @@
 /* ============================================================
    BERM INC. — shared partials: head, header, footer, CTA, form
    ============================================================ */
-export const SITE_URL = 'https://berm-inc-site.vercel.app';
+export const SITE_URL = 'https://www.berminc.com';
 
 export const COMPANY = {
   name: 'Berm Inc.',
